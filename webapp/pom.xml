@@ -36,17 +36,22 @@
 
   <dependencies>
     <!-- Servlet and JSP API with provided scope -->
+    <dependencies>
     <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>servlet-api</artifactId>
-      <scope>provided</scope>
+        <groupId>javax.servlet</groupId>
+        <artifactId>servlet-api</artifactId>
+        <version>2.5</version> <!-- Add the version -->
+        <scope>provided</scope>
     </dependency>
 
     <dependency>
-      <groupId>javax.servlet.jsp</groupId>
-      <artifactId>jsp-api</artifactId>
-      <scope>provided</scope>
+        <groupId>javax.servlet.jsp</groupId>
+        <artifactId>jsp-api</artifactId>
+        <version>2.1</version> <!-- Add the version -->
+        <scope>provided</scope>
     </dependency>
+</dependencies>
+
   </dependencies>
 
 </project>
