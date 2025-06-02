@@ -1,6 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             https://maven.apache.org/xsd/maven-4.0.0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
 
@@ -8,40 +9,16 @@
     <groupId>com.example.maven-project</groupId>
     <artifactId>maven-project</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <relativePath>../pom.xml</relativePath>
   </parent>
 
   <artifactId>server</artifactId>
   <packaging>jar</packaging>
 
-  <name>Server Module</name>
-  <description>Server logic and services</description>
-
   <dependencies>
-    <!-- Use javax.servlet-api from parent dependencyManagement -->
-    <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>javax.servlet-api</artifactId>
-      <version>4.0.1</version> 
-      <scope>provided</scope>
-    </dependency>
-    <!-- JUnit 4 dependency -->
-    <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>4.13.2</version>
-        <scope>test</scope>
-    </dependency>
-
-    <!-- Hamcrest for matchers (optional, but often used with JUnit) -->
-    <dependency>
-        <groupId>org.hamcrest</groupId>
-        <artifactId>hamcrest</artifactId>
-        <version>2.2</version>
-        <scope>test</scope>
-    </dependency>
-
-    <!-- Add your own business logic dependencies as needed -->
+    <!-- Example dependency -->
+    <!-- Add your server dependencies here -->
+    
+    <!-- Inherit test dependencies from parent (JUnit, Hamcrest) -->
   </dependencies>
 
 </project>
